@@ -1,14 +1,13 @@
 @import './base.css';
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
   border: 0 solid #ddd;
   overflow: hidden !important;
 }
 
 canvas {
-  position: fixed !important;
+  position: sticky !important;
 }
 
 p, a, td {

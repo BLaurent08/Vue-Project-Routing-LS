@@ -24,15 +24,18 @@
                 <td class="text-center pt-3">{{ tutorial.tutorialTitle }}</td>
                 <td class="text-center">{{ tutorial.description }}</td>
                 <td class="text-center pt-3">{{ tutorial.published ? "Published" : "Pending" }}</td>
-                <td class="text-center row gap-1 align-middle justify-content-center mx-0">
-                    <button class="btn btn-sm btn-outline-success p-0 popper-lite" @click="editTutorial(index)">Edit</button>
-                    <button class="btn btn-sm btn-outline-warning p-0 popper-lite" @click="deleteTutorial(index)">Delete</button>
+                <td class="row justify-content-center align-middle">
+                    <div class="btn-group-vertical">
+                        <button class="btn btn-outline-success" @click="editTutorial(index)">Edit</button>
+                        <button class="btn btn-outline-warning" @click="deleteTutorial(index)">Delete</button>
+                    </div>
                 </td>
             </tr>
         </tbody>
         <tfoot>
             <tr v-if="tutorials.length > 0">
-                <td colspan="4" class="text-center border border-0"><button @click="removeAll()" class="btn btn-outline-danger popper-lite">Remove All
+                <td colspan="4" class="text-center border border-0"><button @click="removeAll()"
+                        class="btn btn-outline-danger popper-lite">Remove All
                         Tutorials</button></td>
             </tr>
             <tr v-else>
