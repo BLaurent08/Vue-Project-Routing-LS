@@ -9,6 +9,7 @@ table {
 canvas {
   position: absolute !important;
   min-height: 800px;
+  bottom: 0%
 }
 
 p, a, td {
